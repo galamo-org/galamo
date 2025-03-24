@@ -1,39 +1,3 @@
-<<<<<<< Updated upstream:README.md
-=======
-Metadata-Version: 2.2
-Name: galamo
-Version: 0.0.4
-Summary: A Python package for comprehensive galaxy analysis, integrating machine learning and statistical methods. It provides automated tools for morphology classification, kinematics, photometry, and spectral analysis to aid astrophysical research.
-Home-page: https://github.com/galamo-org/galamo
-Author: Jashanpreet Singh Dingra
-Author-email: astrodingra@gmail.com
-License: BSD-3-Clause
-Classifier: Development Status :: 4 - Beta
-Classifier: Intended Audience :: Science/Research
-Classifier: License :: OSI Approved :: BSD License
-Classifier: Programming Language :: Python :: 3
-Classifier: Topic :: Scientific/Engineering :: Astronomy
-Requires-Python: >=3.10
-Description-Content-Type: text/markdown
-Requires-Dist: tensorflow
-Requires-Dist: numpy
-Requires-Dist: opencv-python
-Requires-Dist: joblib
-Requires-Dist: matplotlib
-Requires-Dist: termcolor
-Requires-Dist: requests
-Dynamic: author
-Dynamic: author-email
-Dynamic: classifier
-Dynamic: description
-Dynamic: description-content-type
-Dynamic: home-page
-Dynamic: license
-Dynamic: requires-dist
-Dynamic: requires-python
-Dynamic: summary
-
->>>>>>> Stashed changes:galamo.egg-info/PKG-INFO
 # 🌌 Galamo - Galaxy Morphology Predictor
 
 
