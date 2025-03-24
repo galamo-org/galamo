@@ -1,4 +1,4 @@
-# ![Galamo Logo](https://your-logo-url.com)
+# ![Galamo Logo](images/galamo-main.svg)
 
 ----
 
