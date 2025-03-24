@@ -1,120 +1,54 @@
-# 🌌 Galamo - Galaxy Morphology Predictor
+# ![Galamo Logo](https://your-logo-url.com)
 
+----
 
+![Actions Status](https://github.com/galamo-org/galamo/actions/workflows/ci.yml/badge.svg)
+![Coverage Status](https://codecov.io/gh/galamo-org/galamo/branch/main/graph/badge.svg)
+![PyPI Status](https://img.shields.io/pypi/v/galamo.svg)
+![Documentation Status](https://img.shields.io/readthedocs/galamo/latest.svg?logo=read%20the%20docs&logoColor=white&label=Docs&version=stable)
+![Pre-Commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)
+![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)
+![Zenodo](https://zenodo.org/badge/DOI/10.5281/zenodo.xxxxxx.svg)
 
----
+----
 
-## 🚀 Features
+**Galamo** is a Python package designed for astronomical modeling and analysis, offering tools for AGN research, galaxy classification, and more.
 
-✅ Pre-trained deep learning model for galaxy morphology classification  
-✅ Automatic image preprocessing (resizing, normalization, and format conversion)  
-✅ Simple and intuitive API requiring only an image file as input  
-✅ Supports multiple galaxy morphology types  
-✅ Compatible with Python 3.6+
+- [Website](https://www.galamo.org)
+- [Documentation](https://docs.galamo.org/)
+- [Slack](https://galamo.slack.com/)
+- [Discussion Forum](https://community.galamo.org/)
+- [Mailing List](https://mail.python.org/mailman/listinfo/galamo)
 
----
+## Installation
 
-## 📥 Installation
-
-### Install from PyPI
-
-To install the package using pip:
-
-```bash
-pip install galamo
-```
-
-### Install from Source
-
-Alternatively, to install from source:
+To install `galamo` from PyPI, use:
 
 ```bash
-git clone https://github.com/jsdingra11/galamo.git
-cd galamo
-pip install .
+pip install galamo --upgrade
 ```
 
----
+For detailed instructions, see the [installation guide](https://docs.galamo.org/en/stable/install.html).
 
-## 📖 Usage Guide
+## Contributing
 
-### Import and Initialize the Model
+We welcome contributions from the community! Please follow our [Code of Conduct](https://www.galamo.org/about#codeofconduct) and check out the [contribution guide](https://www.galamo.org/contribute.html) for more details.
 
-```python
-from galamo import galaxy_morph
-```
+## Developing with Codespaces
 
-### Predict Galaxy Morphology from an Image
+Galamo supports GitHub Codespaces for an easy development setup. See the [GitHub Codespaces docs](https://docs.github.com/en/codespaces) for more information.
 
-```python
-galaxy_morph("galaxy.jpg")
-```
+## Acknowledging and Citing
 
-### Example Output
+See the [citation guide](https://www.galamo.org/acknowledging.html) and the [CITATION](https://github.com/your-org/galamo/blob/main/CITATION) file.
 
-```
-Predicted Morphology: Spiral Galaxy
-```
+## Supporting the Project
 
----
+![DAC](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)
+![Donate](https://img.shields.io/badge/Donate-to%20Galamo-brightgreen.svg)
 
-## ⚙️ How It Works
+Galamo needs support. Consider donating to support our mission!
 
-1. Loads a pre-trained deep learning model for galaxy classification.
-2. Preprocesses the input image (resizing, RGB conversion, and normalization).
-3. Feeds the processed image into the neural network for prediction.
-4. Converts the predicted class index to its corresponding galaxy morphology name.
+## License
 
----
-
-## 📋 Requirements
-
-Ensure the following dependencies are installed:
-
-- Python 3.10+
-- TensorFlow
-- NumPy
-- OpenCV
-- Joblib
-- Matplotlib
-
----
-
-## 🧠 Model Details
-
-- Trained on a dataset of galaxy images labeled with different morphology types.
-- Utilizes a Convolutional Neural Network (CNN) to extract features and classify images.
-- Uses a label encoder to map numerical predictions to meaningful class names (e.g., Spiral, Elliptical, Irregular, etc.).
-
----
-
-## 🤝 Contributing
-
-Galamo welcome contributions! To improve the model or add new features:
-
-1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature-name`).
-3. Commit your changes (`git commit -m 'Added new feature'`).
-4. Push the branch (`git push origin feature-name`).
-5. Create a pull request.
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License – see the LICENSE file for details.
-
----
-
-## 📬 Contact & Support
-
-👨‍💻 **Author:** Jashanpreet Singh Dingra  
-👨‍💻 **Co-Author:** Vikramjeet Singh  
-📧 **Email:** [astrodingra@gmail.com](mailto:astrodingra@gmail.com)  
-🔗 **GitHub:** [https://github.com/jsdingra11](https://github.com/jsdingra11)
-
-For issues or feature requests, please open an issue on GitHub.
-
----
-
-🌠 **Galamo - Unveiling the Universe, One Galaxy at a Time!**
+Galamo is licensed under a BSD 3-Clause License - see the [LICENSE](LICENSE) file for details.
