@@ -4,13 +4,9 @@
 ----
 
 ![Actions Status](https://github.com/galamo-org/galamo/actions/workflows/ci.yml/badge.svg)
-![Coverage Status](https://codecov.io/gh/galamo-org/galamo/branch/main/graph/badge.svg)
 ![PyPI Status](https://img.shields.io/pypi/v/galamo.svg)
 ![Documentation Status](https://img.shields.io/readthedocs/galamo/latest.svg?logo=read%20the%20docs&logoColor=white&label=Docs&version=stable)
 ![Pre-Commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)
-![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)
-![Zenodo](https://zenodo.org/badge/DOI/10.5281/zenodo.xxxxxx.svg)
-
 ----
 
 **Galamo** is a Python package designed for astronomical modeling and analysis, offering tools for AGN research, galaxy classification, and more.
