@@ -1,4 +1,4 @@
-![Galamo Logo](https://www.github.com/galamo-org/galamo/images/galamo-main.svg)
+![Galamo Logo](images/galamo_main.svg)
 
 
 ----
