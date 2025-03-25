@@ -13,7 +13,7 @@ setup(
     classification, kinematics, photometry, and spectral analysis to aid 
     astrophysical research.", long_description=long_description, # Use the 
     content from README.md long_description_content_type="text/markdown", 
-    # Markdown format url="https://github.com/jdingra11/galamo", 
+    # Markdown format url="https://github.com/galamo-org/galamo", 
     include_package_data=True, # ✅ Ensure package data is included 
     package_data={"galamo": ["model.keras", "encoder.pkl"]}, # ✅ Specify 
     extra files
