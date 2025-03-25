@@ -9,18 +9,22 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Ensures full repo is checked out
+
+      - name: Verify repository files
+        run: ls -R  # Debugging step to list files
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
-          cache: 'pip'  # Caches dependencies
+          cache: 'pip'
 
       - name: Install dependencies
         run: |
-          pip install --upgrade pip
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-          pip install pytest  # Ensure pytest is available
-
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; else echo "requirements.txt not found"; fi
+          pip install pytest
+          
       - name: Run tests
         run: pytest
