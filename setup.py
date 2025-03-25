@@ -7,7 +7,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="galamo",
-    version="0.0.4",
+    version="0.0.5",
     author="Jashanpreet Singh Dingra",
     author_email="astrodingra@gmail.com",
     description="A Python package for comprehensive galaxy analysis, integrating machine learning and statistical methods. It provides automated tools for morphology classification, kinematics, photometry, and spectral analysis to aid astrophysical research.",
