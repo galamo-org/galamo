@@ -10,7 +10,6 @@
 
 - [Website](https://www.galamo.org)
 - [Documentation](https://docs.galamo.org/)
-- [Slack](https://galamo.slack.com/)
 - [Discussion Forum](https://community.galamo.org/)
 - [Mailing List](https://mail.python.org/mailman/listinfo/galamo)
 
