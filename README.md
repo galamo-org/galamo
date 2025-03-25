@@ -3,7 +3,7 @@
 
 ----
 
-![Actions Status](https://github.com/galamo-org/galamo/actions/workflows/ci.yml/badge.svg)
+![CI Status](https://github.com/galamo-org/galamo/actions/workflows/ci.yml/badge.svg)
 ![PyPI Status](https://img.shields.io/pypi/v/galamo.svg)
 ![Documentation Status](https://img.shields.io/readthedocs/galamo/latest.svg?logo=read%20the%20docs&logoColor=white&label=Docs&version=stable)
 ![Pre-Commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)
