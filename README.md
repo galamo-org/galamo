@@ -22,19 +22,15 @@ To install `galamo` from PyPI, use:
 pip install galamo --upgrade
 ```
 
-For detailed instructions, see the [installation guide](https://docs.galamo.org/en/stable/install.html).
+For detailed instructions, see the [installation guide](https:/www.galamo.org/install).
 
 ## Contributing
 
-We welcome contributions from the community! Please follow our [Code of Conduct](https://www.galamo.org/about#codeofconduct) and check out the [contribution guide](https://www.galamo.org/contribute.html) for more details.
-
-## Developing with Codespaces
-
-Galamo supports GitHub Codespaces for an easy development setup. See the [GitHub Codespaces docs](https://docs.github.com/en/codespaces) for more information.
+We welcome contributions from the community! Please follow our [Code of Conduct](https://www.galamo.org/code_of_conduct.html) and check out the [contribution guide](https://www.galamo.org/contribute.html) for more details.
 
 ## Acknowledging and Citing
 
-See the [citation guide](https://www.galamo.org/acknowledging.html) and the [CITATION](https://github.com/your-org/galamo/blob/main/CITATION) file.
+See the [citation guide](https://www.galamo.org/acknowledging.html) and the [CITATION](https://github.com/galamo-org/galamo/blob/main/CITATION) file.
 
 ## Supporting the Project
 
