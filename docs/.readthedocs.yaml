@@ -14,10 +14,6 @@ build:
 sphinx:
    configuration: source/conf.py
 
-format:
-  - pdf
-  - ipynb
-
 python:
   install:
     - requirements: requirements.txt

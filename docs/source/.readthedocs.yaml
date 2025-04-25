@@ -14,9 +14,6 @@ build:
 sphinx:
    configuration: conf.py
 
-format:
-  - pdf
-  - ipynb
 
 python:
   install:
