@@ -1,91 +1,110 @@
-import tensorflow as tf
-from tensorflow import keras
-import numpy as np
-import cv2
-import matplotlib.pyplot as plt
-import joblib
 import os
-from tkinter import Tk, filedialog
+import cv2
+import numpy as np
+import pandas as pd
+from tensorflow import keras
+import joblib
 
+# Load models
+BASE_DIR = os.path.dirname(__file__)
+model1 = keras.models.load_model(os.path.join(BASE_DIR, "model.keras"))      # Galaxy vs Not
+model2 = keras.models.load_model(os.path.join(BASE_DIR, "model2.keras"))     # Morphology
 
-MODEL_PATH = os.path.join(os.path.dirname(__file__), "model.keras")
-model = keras.models.load_model(MODEL_PATH)
+# Load encoder (optional)
+encoder_path = os.path.join(BASE_DIR, "encoder.pkl")
+label_encoder = joblib.load(encoder_path) if os.path.exists(encoder_path) else None
 
-
-label_encoder_path = 'encoder.pkl'
-if os.path.exists(label_encoder_path):
-    label_encoder = joblib.load(label_encoder_path)
-else:
-    label_encoder = None
-    print("Label encoder not found. Predictions will be class indices.")
-
+# Class mappings
+class_mapping1 = {0: "Galaxy", 1: "Not a Galaxy"}
+class_mapping2 = {
+    0: ("Merger Galaxy", "Disturbed Galaxy"),
+    1: ("Merger Galaxy", "Merging Galaxy"),
+    2: ("Elliptical Galaxy", "Round Smooth Galaxy"),
+    3: ("Elliptical Galaxy", "In-between Round Smooth Galaxy"),
+    4: ("Elliptical Galaxy", "Cigar Shaped Smooth Galaxy"),
+    5: ("Spiral Galaxy", "Barred Spiral Galaxy"),
+    6: ("Spiral Galaxy", "Unbarred Tight Spiral Galaxy"),
+    7: ("Spiral Galaxy", "Unbarred Loose Spiral Galaxy"),
+    8: ("Spiral Galaxy", "Edge-on Galaxy without Bulge"),
+    9: ("Spiral Galaxy", "Edge-on Galaxy with Bulge")
+}
 
 def preprocess_image(image_path, target_size=(128, 128)):
-    """Loads and preprocesses an image for the model."""
-    if not os.path.exists(image_path):
-        raise FileNotFoundError(f"Image not found at {image_path}")
-    
     image = cv2.imread(image_path)
     if image is None:
-        raise ValueError(f"Error: Could not load image from {image_path}")
-    
+        raise ValueError(f"Could not load image: {image_path}")
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     image = cv2.resize(image, target_size)
     image = image / 255.0
-    image = np.expand_dims(image, axis=0)
-    return image
+    return np.expand_dims(image, axis=0)
 
 
-    
-def galaxy_morph(image_path):
-    if not os.path.exists(image_path):
-        print(f"Error: Image not found at {image_path}")
-        return
-    
-    processed_image = preprocess_image(image_path)
-    predictions = model.predict(processed_image)
-    predicted_class_index = np.argmax(predictions)
-    
+class GalaxyMorphPredictor:
+    def __init__(self):
+        self.results = []
+
+    def __call__(self, path):
+        """Main callable function: galaxy_morph(path)"""
+        if os.path.isdir(path):
+            images = self._get_images_from_folder(path)
+        elif os.path.isfile(path):
+            images = [path]
+        else:
+            print(f"❌ Path not found: {path}")
+            return
+
+        self.results.clear()
+        print(f"\n🪐 Running prediction on {len(images)} image(s):\n")
+        for img_path in images:
+            try:
+                result = self._predict(img_path)
+                self.results.append(result)
+                self._print_result(result)
+            except Exception as e:
+                print(f"⚠️ Error with {img_path}: {e}")
+
+    def _get_images_from_folder(self, folder):
+        valid_exts = ('.jpg', '.jpeg', '.png', '.bmp', '.webp')
+        return [os.path.join(folder, f) for f in os.listdir(folder) if f.lower().endswith(valid_exts)]
+
+    def _predict(self, image_path):
+        image = preprocess_image(image_path)
+        pred1 = model1.predict(image)
+        type_index = np.argmax(pred1)
+        galaxy_type = class_mapping1.get(type_index, "Unknown")
+        conf1 = float(np.max(pred1) * 100)
+
+        if galaxy_type == "Galaxy":
+            pred2 = model2.predict(image)
+            subclass_index = np.argmax(pred2)
+            main_class, subclass = class_mapping2.get(subclass_index, ("Unknown", "Unknown"))
+            conf2 = float(np.max(pred2) * 100)
+        else:
+            main_class, subclass, conf2 = "-", "-", 0.0
+
+        return {
+            "Filename": os.path.basename(image_path),
+            "Type": galaxy_type,
+            "Type Confidence (%)": round(conf1, 2),
+            "Subclass": subclass,
+            "Path": image_path
+        }
+
+    def _print_result(self, result):
+        print(f"📂 {result['Filename']}")
+        print(f"  → Type: {result['Type']} ({result['Type Confidence (%)']}%)")
+        if result['Type'] == "Galaxy":
+            print(f"  → Subclass: {result['Subclass']}")
+        print("")
+
+    def save_csv(self, filename="results.csv"):
+        if not self.results:
+            print("⚠️ No results to save. Run prediction first.")
+            return
+        df = pd.DataFrame(self.results)
+        df.to_csv(filename, index=False)
+        print(f"\n✅ Results saved to {filename}")
 
 
-    max_probability = np.max(predictions)
-    predicted_class = np.argmax(predictions)
-
-    class_mapping = {
-        0: ("Merger Galaxy", "Disturbed Galaxy"),
-        1: ("Merger Galaxy", "Merging Galaxy"),
-        2: ("Elliptical Galaxy", "Round Smooth Galaxy"),
-        3: ("Elliptical Galaxy", "In-between Round Smooth Galaxy"),
-        4: ("Elliptical Galaxy", "Cigar Shaped Smooth Galaxy"),
-        5: ("Spiral Galaxy", "Barred Spiral Galaxy"),
-        6: ("Spiral Galaxy", "Unbarred Tight Spiral Galaxy"),
-        7: ("Spiral Galaxy", "Unbarred Loose Spiral Galaxy"),
-        8: ("Spiral Galaxy", "Edge-on Galaxy without Bulge"),
-        9: ("Spiral Galaxy", "Edge-on Galaxy with Bulge")
-    }
-      
-    galaxy_type, subclass = class_mapping.get(predicted_class_index, ("Unknown", "Unknown"))
-    
-    
-        
-    image = cv2.imread(image_path)
-    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-    plt.imshow(image)
-    plt.imshow(image)
-    plt.title(f"Galaxy Type: {galaxy_type} \n\n Subclass: {subclass}", fontsize=14, pad=20)     
-    plt.axis('off')
-    plt.show()
-
-
-if __name__ == "__main__":
-    root = Tk()
-    root.withdraw() 
-    image_path = filedialog.askopenfilename(
-        title="Select an image",
-        filetypes=[("Image files", "*.jpg *.jpeg *.png *.bmp * .webp")]
-    )
-
-    if image_path:
-        galaxy_morph(image_path)
-    else:
-        print("No image selected.")
+# Export for import
+galaxy_morph = GalaxyMorphPredictor()
