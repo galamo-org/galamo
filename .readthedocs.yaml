@@ -12,8 +12,6 @@ python:
   install:
     - requirements: requirements-docs.txt
 
-branches:
-  - main (default)
 
 tags:
   - v0.0.8
