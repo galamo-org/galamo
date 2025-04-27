@@ -3,7 +3,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Galamo'
-copyright = '2025, Jashanpreet Singh Dingra'
+copyright = '2025, Galamo'
 author = 'Jashanpreet Singh Dingra'
 release = 'v0.0.8'
 
@@ -24,5 +24,5 @@ exclude_patterns = []
 
 # -- Options for HTML output -------------------------------------------------
 
-html_theme = 'sphinx_material'  # You can switch to 'sphinx_rtd_theme' later if you want
+html_theme = 'pydata_sphinx_theme'  # You can switch to 'sphinx_rtd_theme' later if you want
 html_static_path = ['_static']
