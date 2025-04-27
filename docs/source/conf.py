@@ -3,7 +3,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Galamo'
-copyright = '2025, Jashanpreet Singh Dingra'
+copyright = '2025, Galamo'
 author = 'Jashanpreet Singh Dingra'
 release = 'v0.0.8'
 
