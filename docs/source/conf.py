@@ -30,8 +30,8 @@ html_static_path = ['_static']
 
 html_theme_options = {
     "logo": {
-        "image_light": "_static/galamo_main.svg",   # Optional: Your logo path
-        "image_dark": "_static/gray-logo.svg",
+        "image_light": "_static/gray-logo.svg",   # Optional: Your logo path
+        "image_dark": "_static/galamo_main.svg",
     },
     "navbar_start": ["navbar-logo"],
     "navbar_center": ["navbar-nav"],
