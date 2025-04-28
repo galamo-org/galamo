@@ -23,6 +23,6 @@ templates_path = ['_templates']
 exclude_patterns = []
 
 # -- Options for HTML output -------------------------------------------------
-
+html_logo = "_static/galamo_main.svg"
 html_theme = 'pydata_sphinx_theme'  # You can switch to 'sphinx_rtd_theme' later if you want
 html_static_path = ['_static']

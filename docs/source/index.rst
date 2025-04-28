@@ -4,7 +4,7 @@
 Galamo: An Open-Source Python Package for Comprehensive Galaxy Analysis.
 #################################################
 
-**Version**: |release| - :ref:`whatsnew-0.0.8`
+**Version**: |release| - :ref:`whats new-0.0.8`
 
 **Useful links**:
 :ref:`Installation <installing-galamo>` |
