@@ -43,12 +43,6 @@ html_theme_options = {
             "icon": "fab fa-github",
             "type": "fontawesome",
         },
-        {
-            "name": "X (Twitter)",
-            "url": "https://x.com/galamo_org",  # Replace with your X.com handle
-            "icon": "fab fa-x-twitter",         # FontAwesome updated icon for X
-            "type": "fontawesome",
-        },
     ],
 }
 
