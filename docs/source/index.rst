@@ -7,11 +7,11 @@ Galamo: An Open-Source Python Package for Comprehensive Galaxy Analysis.
 **Version**: |release| - :ref:`whatsnew-0.0.8`
 
 **Useful links**:
-:ref:`Installation <installing-astropy>` |
+:ref:`Installation <installing-galamo>` |
 `Issues & Ideas <https://github.com/galamo-org/galamo/issues>`__ |
 `Get Help <http://www.galamo.org/help.html>`__ |
-`Contribute <http://www.astropy.org/contribute.html>`__ |
-`About <http://www.astropy.org/about.html>`__
+`Contribute <http://www.galamo.org/contribute.html>`__ |
+`About <http://www.galamo.org/about.html>`__
 
 The ``galamo`` package contains key functionality and common tools needed for
 performing astronomy and astrophysics with Python.  It is at the core of the
@@ -23,7 +23,7 @@ processing, and data analysis.
 .. Important:: If you use Galamo for work presented in a publication or talk
    please help the project via proper `citation or acknowledgement
    <https://www.galamo.org/acknowledging.html>`_.  This also applies to use of
-   software or `affiliated packages`_ that depend on the astropy
+   software or `affiliated packages`_ that depend on the galamo
    core package.
 
 .. toctree::
@@ -64,7 +64,7 @@ processing, and data analysis.
         ^^^^^^^^^^
 
         The user guide provides in-depth information on the key concepts
-        of astropy with useful background information and explanation.
+        of galamo with useful background information and explanation.
 
         +++
 
@@ -84,7 +84,7 @@ processing, and data analysis.
 
         Saw a typo in the documentation? Want to improve
         existing functionalities? The contributing guidelines will guide
-        you through the process of improving astropy.
+        you through the process of improving galamo.
 
         +++
 
@@ -113,15 +113,15 @@ processing, and data analysis.
 
             To the project details
 
-.. image:: https://github.com/astropy/repo_stats/blob/cache/cache/astropy_user_stats_light.png?raw=true
+.. image:: https://github.com/galamo/repo_stats/blob/cache/cache/astropy_user_stats_light.png?raw=true
     :class: only-light
-    :target: https://docs.astropy.org/en/latest/impact_health.html
+    :target: https://docs.galamo.org/en/latest/impact_health.html
     :alt: Galamo User Statistics
 
-.. image:: https://github.com/astropy/repo_stats/blob/cache/cache/astropy_user_stats_dark.png?raw=true
+.. image:: https://github.com/galamo/repo_stats/blob/cache/cache/astropy_user_stats_dark.png?raw=true
     :class: only-dark
-    :target: https://docs.astropy.org/en/latest/impact_health.html
+    :target: https://docs.galamo.org/en/latest/impact_health.html
     :alt: Galamo User Statistics
 
-.. _feedback@astropy.org: mailto:contact@galamo.org
+.. _feedback@galamo.org: mailto:contact@galamo.org
 .. _affiliated packages: https://www.galamo.org/affiliated/
