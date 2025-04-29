@@ -35,7 +35,7 @@ html_css_files = [
 
 html_theme_options = {
     "logo": {
-        "image_light": "_static/galamo_main.svg",
+        "image_light": "_static/galamo0.svg",
         "image_dark": "_static/galamo_main.svg",
     },
 
