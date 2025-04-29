@@ -1,3 +1,7 @@
 html[data-theme="light"] img[src*="galamo_main.svg"] {
     filter: grayscale(100%) brightness(1%);
 }
+.small-svg {
+    width: 100px;   /* Adjust as needed */
+    height: auto;
+}
