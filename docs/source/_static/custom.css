@@ -5,6 +5,7 @@ html[data-theme="light"] img[src*="galamo_main.svg"] {
 .small-svg {
     display: block;
     margin: 0 auto;
+    margin-top: 10px;
     width: 70px;
     height: auto;
 }
