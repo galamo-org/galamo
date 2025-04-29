@@ -40,7 +40,7 @@ html_theme_options = {
 
     "navbar_start": ["navbar-logo"],
     "navbar_center": ["navbar-nav"],
-    "navbar_end": ["search-field", "theme-switcher", "navbar-icon-links"],
+    "navbar_end": ["theme-switcher", "navbar-icon-links"],
     "icon_links": [
         {
             "name": "GitHub",
