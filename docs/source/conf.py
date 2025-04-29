@@ -27,12 +27,17 @@ exclude_patterns = []
 html_theme = 'pydata_sphinx_theme'  # You can switch to 'sphinx_rtd_theme' later if you want
 html_static_path = ['_static']
 
+html_css_files = [
+    "custom.css", 
+]
+
 
 html_theme_options = {
     "logo": {
-        "image_light": "_static/gray-logo.svg",   # Optional: Your logo path
+        "image_light": "_static/galamo_main.svg",
         "image_dark": "_static/galamo_main.svg",
     },
+
     "navbar_start": ["navbar-logo"],
     "navbar_center": ["navbar-nav"],
     "navbar_end": ["search-field", "theme-switcher", "navbar-icon-links"],
