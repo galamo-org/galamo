@@ -1,17 +1,16 @@
 html[data-theme="light"] img[src*="galamo_main.svg"] {
     filter: grayscale(100%) brightness(1%);
 }
-/* Style SVGs to be smaller and centered */
+/* SVGs: centered and sized */
 .small-svg {
     display: block;
-    margin: 0 auto;        /* Center horizontally */
+    margin: 0 auto;
     width: 100px;
     height: auto;
 }
 
-/* Dark theme support: invert SVG color */
-@media (prefers-color-scheme: dark) {
-    .small-svg {
-        filter: invert(1) hue-rotate(180deg);
-    }
+/* Invert only in dark theme */
+html[data-theme="dark"] .small-svg {
+    filter: invert(1) hue-rotate(180deg);
 }
+
