@@ -1,30 +1,28 @@
 :tocdepth: 3
 
-#################################################
-Galamo: An Open-Source Python Package for Comprehensive Galaxy Analysis.
-#################################################
+###############################################################
+Galamo: An Open-Source Python Package for Comprehensive Galaxy Analysis
+###############################################################
 
-**Version**: |release| - :ref:`whats new-0.0.8`
+**Version**: |release| — :ref:`whats new-0.0.8`
 
-**Useful links**:
+**Useful links**:  
 :ref:`Installation <installing-galamo>` |
 `Issues & Ideas <https://github.com/galamo-org/galamo/issues>`__ |
 `Get Help <http://www.galamo.org/help.html>`__ |
 `Contribute <http://www.galamo.org/contribute.html>`__ |
 `About <http://www.galamo.org/about.html>`__
 
-The ``galamo`` package contains key functionality and common tools needed for
-performing astronomy and astrophysics with Python.  It is at the core of the
-`Galamo <http://www.galamo.org/about.html>`_, which aims to enable
-the community to develop a robust ecosystem of `affiliated packages`_
-covering a broad range of needs for astronomical research, data
-processing, and data analysis.
+The ``galamo`` package contains essential functionality and common tools needed for
+performing astronomy and astrophysics with Python. It is at the core of the
+`Galamo <http://www.galamo.org/about.html>`_, which aims to build a robust ecosystem of 
+`affiliated packages`_ for astronomical research, data processing, and analysis.
 
-.. Important:: If you use Galamo for work presented in a publication or talk
-   please help the project via proper `citation or acknowledgement
-   <https://www.galamo.org/acknowledging.html>`_.  This also applies to use of
-   software or `affiliated packages`_ that depend on the galamo
-   core package.
+.. Important:: If you use Galamo for published work or presentations,
+   please cite us or give proper `acknowledgement <https://www.galamo.org/acknowledging.html>`_.
+   This applies to software or `affiliated packages`_ that depend on Galamo.
+
+----
 
 .. toctree::
    :maxdepth: 1
@@ -36,16 +34,16 @@ processing, and data analysis.
    index_project_details
 
 .. grid:: 2
+    :gutter: 2
 
     .. grid-item-card::
-        :img-top: _static/index-images/getting_started.svg
+        :img-top: _static/getting_started.svg
         :text-align: center
 
         Getting Started
         ^^^^^^^^^^^^^^^
 
-        New to Galamo? Check out the getting started guides. They contain an
-        introduction to galamo's main concepts and links to additional tutorials.
+        New to Galamo? Start here. Introduction to core concepts and tutorials.
 
         +++
 
@@ -57,14 +55,13 @@ processing, and data analysis.
             To the getting started guides
 
     .. grid-item-card::
-        :img-top: _static/index-images/user_guide.svg
+        :img-top: _static/user_guide.svg
         :text-align: center
 
         User Guide
         ^^^^^^^^^^
 
-        The user guide provides in-depth information on the key concepts
-        of galamo with useful background information and explanation.
+        Learn the essential tools and concepts with in-depth documentation.
 
         +++
 
@@ -82,9 +79,7 @@ processing, and data analysis.
         Contributor's Guide
         ^^^^^^^^^^^^^^^^^^^
 
-        Saw a typo in the documentation? Want to improve
-        existing functionalities? The contributing guidelines will guide
-        you through the process of improving galamo.
+        Improve documentation, fix bugs, or contribute features.
 
         +++
 
@@ -96,13 +91,13 @@ processing, and data analysis.
             To the contributor's guide
 
     .. grid-item-card::
-        :img-top: _static/index-images/api.svg
+        :img-top: _static/api.svg
         :text-align: center
 
         Project Details
         ^^^^^^^^^^^^^^^
 
-        What's new in the latest release, changelog, and other project details.
+        Explore release notes, changelog, and project information.
 
         +++
 
@@ -113,6 +108,8 @@ processing, and data analysis.
 
             To the project details
 
+----
+
 .. image:: https://github.com/galamo/repo_stats/blob/cache/cache/astropy_user_stats_light.png?raw=true
     :class: only-light
     :target: https://docs.galamo.org/en/latest/impact_health.html
@@ -122,6 +119,8 @@ processing, and data analysis.
     :class: only-dark
     :target: https://docs.galamo.org/en/latest/impact_health.html
     :alt: Galamo User Statistics
+
+----
 
 .. _feedback@galamo.org: mailto:contact@galamo.org
 .. _affiliated packages: https://www.galamo.org/affiliated/

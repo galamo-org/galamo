@@ -16,7 +16,8 @@ sys.path.insert(0, os.path.abspath('..'))  # Ensures Sphinx can find galamo pack
 extensions = [
     'sphinx.ext.autodoc',       # Automatically include docstrings from your code
     'sphinx.ext.napoleon',      # Supports Google & NumPy style docstrings
-    'sphinx.ext.viewcode'       # Adds links to highlighted source code
+    'sphinx.ext.viewcode',       # Adds links to highlighted source code
+    'sphinx_design',
 ]
 
 templates_path = ['_templates']
