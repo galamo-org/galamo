@@ -32,12 +32,12 @@ performing astronomy and astrophysics with Python. It is at the core of the
    index_user_docs
    index_dev
    index_project_details
-
 .. grid:: 2
     :gutter: 2
 
     .. grid-item-card::
         :img-top: _static/getting_started.svg
+        :class-img-top: small-svg
         :text-align: center
 
         Getting Started
@@ -56,6 +56,7 @@ performing astronomy and astrophysics with Python. It is at the core of the
 
     .. grid-item-card::
         :img-top: _static/user_guide.svg
+        :class-img-top: small-svg
         :text-align: center
 
         User Guide
@@ -73,7 +74,8 @@ performing astronomy and astrophysics with Python. It is at the core of the
             To the user guide
 
     .. grid-item-card::
-        :img-top: _static/index-images/contributor.svg
+        :img-top: _static/contributor.svg
+        :class-img-top: small-svg
         :text-align: center
 
         Contributor's Guide
@@ -92,6 +94,7 @@ performing astronomy and astrophysics with Python. It is at the core of the
 
     .. grid-item-card::
         :img-top: _static/api.svg
+        :class-img-top: small-svg
         :text-align: center
 
         Project Details
@@ -108,19 +111,6 @@ performing astronomy and astrophysics with Python. It is at the core of the
 
             To the project details
 
-----
-
-.. image:: https://github.com/galamo/repo_stats/blob/cache/cache/astropy_user_stats_light.png?raw=true
-    :class: only-light
-    :target: https://docs.galamo.org/en/latest/impact_health.html
-    :alt: Galamo User Statistics
-
-.. image:: https://github.com/galamo/repo_stats/blob/cache/cache/astropy_user_stats_dark.png?raw=true
-    :class: only-dark
-    :target: https://docs.galamo.org/en/latest/impact_health.html
-    :alt: Galamo User Statistics
-
-----
 
 .. _feedback@galamo.org: mailto:contact@galamo.org
 .. _affiliated packages: https://www.galamo.org/affiliated/
