@@ -9,7 +9,7 @@
 **Galamo** is a Python package designed for astronomical modeling and analysis, offering tools for AGN research, galaxy classification, and more.
 
 - [Website](https://www.galamo.org)
-- [Documentation](https://www.galamo.org/learn.html)
+- [Tutorials](https://www.galamo.org/learn.html)
 - [Discussion Forum](https://community.galamo.org/)
 - [Mailing List](https://groups.google.com/g/galamo-dev)
 
