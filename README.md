@@ -10,7 +10,7 @@
 
 - [Website](https://www.galamo.org)
 - [Tutorials](https://www.galamo.org/learn.html)
-- [Discussion Forum](https://community.galamo.org/)
+- [Discussion Forum](https://github.com/orgs/galamo-org/discussions)
 - [Mailing List](https://groups.google.com/g/galamo-dev)
 
 ## Installation
