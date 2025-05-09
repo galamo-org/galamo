@@ -11,7 +11,7 @@
 - [Website](https://www.galamo.org)
 - [Documentation](https://www.galamo.org/learn.html)
 - [Discussion Forum](https://community.galamo.org/)
-- [Mailing List](https://mail.python.org/mailman/listinfo/galamo)
+- [Mailing List]([https://mail.python.org/mailman/listinfo/galamo](https://groups.google.com/g/galamo-dev))
 
 ## Installation
 
