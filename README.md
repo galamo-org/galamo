@@ -3,14 +3,14 @@
 
 ----
 ![PyPI Status](https://img.shields.io/pypi/v/galamo.svg)
-[![Documentation](https://img.shields.io/badge/documentation-latest-green.svg)](https://www.galamo.org/learn)
+[![Documentation](https://img.shields.io/badge/documentation-latest-green.svg)](https://galamo.readthedocs.io/en/stable/)
 ----
 
 **Galamo** is a Python package designed for astronomical modeling and analysis, offering tools for AGN research, galaxy classification, and more.
 
 - [Website](https://www.galamo.org)
 - [Documentation](https://www.galamo.org/learn.html)
-- [Discussion Forum](https://github.com/orgs/galamo-org/discussions)
+- [Discussion Forum](https://community.galamo.org/)
 - [Mailing List](https://groups.google.com/g/galamo-dev)
 
 ## Installation
