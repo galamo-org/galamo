@@ -28,9 +28,8 @@ For detailed instructions, see the [installation guide](https:/www.galamo.org/).
 We welcome contributions from the community! Please follow our [Code of Conduct](https://www.galamo.org/code_of_conduct.html) and check out the [contribution guide](https://www.galamo.org/contribute.html) for more details.
 
 ## Acknowledging and Citing
-
-See the [citation guide](https://www.galamo.org/acknowledging.html) and the [CITATION](https://github.com/galamo-org/galamo/blob/main/CITATION) file.
-
+Contact: astrodingra@gmail.com
+(maniscript under making)
 ## Supporting the Project
 
 ![DAC](https://img.shields.io/badge/powered%20by-DAC-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)
