@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 from scipy.stats import gaussian_kde
 from termcolor import colored
 
-
 # Default BPT diagram
 def draw(input_file, map="default", save_figure=False, output_filename="BPT_diagram.pdf"):
     """
