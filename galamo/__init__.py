@@ -1,7 +1,7 @@
 import os
 import tensorflow as tf
 from .model import galaxy_morph, preprocess_image
-from . import bpt  # BPT module
+from .bpt import bpt  # BPT module
 from . import psr  # PSR enhancement module
 
 __version__ = "0.0.8"  # Updated version to reflect new module
