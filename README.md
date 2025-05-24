@@ -23,7 +23,7 @@ pip install galamo --upgrade
 
 For detailed instructions, see the [installation guide](https:/www.galamo.org/).
 
-## How the Modules Work (Glimps)
+## How the Modules Work (Early Glimps)
 
 Below are the brief overviews of the main modules in the `Galamo` project, illustrating their workflows and functionalities:
 
