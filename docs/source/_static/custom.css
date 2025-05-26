@@ -1,0 +1,17 @@
+html[data-theme="light"] img[src*="galamo_main.svg"] {
+    filter: grayscale(100%) brightness(1%);
+}
+/* SVGs: centered and sized */
+.small-svg {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 70px;
+    height: auto;
+}
+
+/* Invert only in dark theme */
+html[data-theme="dark"] .small-svg {
+    filter: invert(1) hue-rotate(180deg);
+}
+
