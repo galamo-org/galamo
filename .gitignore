@@ -17,9 +17,6 @@ __pycache__/
 # Ignore MacOS system files
 .DS_Store
 
-# Ignore secrets
-api.txt
-
 # Ignore sensitive model files
 galamo/model.keras
 galamo/encoder.pkl
