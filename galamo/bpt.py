@@ -19,11 +19,11 @@ def draw(input_file, map="default", save_figure=False, output_filename="BPT_diag
     required_columns = ['h_alpha_flux', 'h_beta_flux', 'oiii_5007_flux', 'nii_6584_flux',
                         'oi_6300_flux', 'sii_6717_flux', 'sii_6731_flux']
     
-    # Read the data
+
+    
     df = pd.read_csv(input_file)
     actual_columns = df.columns.tolist()
-
-    # Check if all required columns are present
+    
     missing_columns = [col for col in required_columns if col not in actual_columns]
     
     if missing_columns:

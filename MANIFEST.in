@@ -1,3 +1,3 @@
 include galamo/model.keras
-include galamo/encoder.pkl  # If you also need to include encoder.pkl
+include galamo/encoder.pkl 
 recursive-include galamo *.keras

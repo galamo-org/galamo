@@ -16,17 +16,17 @@ setup(
     author="Jashanpreet Singh Dingra",
     author_email="astrodingra@gmail.com",
     description="A Python package for comprehensive galaxy analysis, integrating machine learning and statistical methods. It provides automated tools for morphology classification, kinematics, photometry, and spectral analysis to aid astrophysical research.",
-    long_description=long_description,  # Use the content from README.md
-    long_description_content_type="text/markdown",  # Markdown format
-    url="https://www.galamo.org",  # Primary homepage (your main website)
+    long_description=long_description,  
+    long_description_content_type="text/markdown",  
+    url="https://www.galamo.org", 
 
-    project_urls={  # ✅ Add GitHub and other related URLs
+    project_urls={
         "Source Code": "https://github.com/galamo-org/galamo",
-        "Documentation": "https://galamo.org/docs",  # Optional if you have docs there
+        "Documentation": "https://galamo.readthedocs.io/en/latest/", 
         "Bug Tracker": "https://github.com/galamo-org/galamo/issues",
     },
-    include_package_data=True,  # ✅ Ensure package data is included
-    package_data=package_data,  # ✅ Specify extra files dynamically
+    include_package_data=True,  
+    package_data=package_data, 
 
     install_requires=[
         "tensorflow",
