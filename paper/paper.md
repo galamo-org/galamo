@@ -51,11 +51,9 @@ The `bpt` module automates the classification of galaxies into AGN, composite, o
   $$
 
 - **Kewley et al. (2001):**
-
   $$
-  \log_{10} \left( \frac{[\text{O\,III}]}{\text{H}\beta} \right) = \frac{0.61}{\log_{10} \left( \frac{[\text{N\,II}]}{\text{H}\alpha} \right) - 0.47} + 1.19
+  \log_{10} \left( \frac{[\text{O\,III}]}{\text{H}\beta} \right) = \frac{0.61}{\log_{10} \left( \frac{[\text{N\,II}]}{\text{H}\alpha} \right) - 0.05} + 1.3
   $$
-
 
 
 Galaxies below the Kauffmann line [@Kauffmann2003] are considered star-forming, those between the two lines are composites, and those above the Kewley line [@Kewley2001] are classified as AGNs. The module allows both manual input of line fluxes and automatic extraction from SDSS spectra. It also performs error checking on flux uncertainties and generates annotated plots.
