@@ -4,7 +4,7 @@ authors:
   - name: Jashanpreet Singh Dingra
     affiliation: 1
     orcid: 0009-0007-1311-3898
-  - name: Virkamjeet Singh
+  - name: Vikramjeet Singh
     affiliation: 1
 affiliations:
   - name: Guru Nanak Dev University, Amritsar, India
