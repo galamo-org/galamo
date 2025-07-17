@@ -51,8 +51,9 @@ The `bpt` module automates the classification of galaxies into AGN, composite, o
   $$
 
 - **Kewley et al. (2001):**
+
   $$
-  \log_{10} \left( \frac{[\text{O\,III}]}{\text{H}\beta} \right) = \frac{0.61}{\log_{10} \left( \frac{[\text{N\,II}]}{\text{H}\alpha} \right) - 0.05} + 1.3
+  \log_{10} \left( \frac{[\text{O\,III}]}{\text{H}\beta} \right) = \frac{0.61}{\log_{10} \left( \frac{[\text{N\,II}]}{\text{H}\alpha} \right) - 0.47} + 1.19
   $$
 
 
