@@ -44,16 +44,16 @@ To enhance interpretability, the `galaxy_morph` module also includes an alternat
 
 The `bpt` module automates the classification of galaxies into AGN, composite, or star-forming based on the BPT diagram. It computes two key emission line ratios: log([O III]/Hβ) and log([N II]/Hα), and compares them against two well-known classification boundaries:
 
-- Kauffmann et al. (2003):
-  
+- **Kauffmann et al. (2003):**
+
   $$
-  \log_{10} \left( \frac{[\text{O III}]}{\text{H}\beta} \right) = \frac{0.61}{\log_{10} \left( \frac{[\text{N II}]}{\text{H}\alpha} \right) - 0.05} + 1.3
+  \log_{10} \left( \frac{[\text{O\,III}]}{\text{H}\beta} \right) = \frac{0.61}{\log_{10} \left( \frac{[\text{N\,II}]}{\text{H}\alpha} \right) - 0.05} + 1.3
   $$
 
-- Kewley et al. (2001):
-  
+- **Kewley et al. (2001):**
+
   $$
-  \log_{10} \left( \frac{[\text{O III}]}{\text{H}\beta} \right) = \frac{0.61}{\log_{10} \left( \frac{[\text{N II}]}{\text{H}\alpha} \right) - 0.47} + 1.19
+  \log_{10} \left( \frac{[\text{O\,III}]}{\text{H}\beta} \right) = \frac{0.61}{\log_{10} \left( \frac{[\text{N\,II}]}{\text{H}\alpha} \right) - 0.47} + 1.19
   $$
 
 
