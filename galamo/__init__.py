@@ -1,32 +1,37 @@
+# galamo/__init__.py
+
+"""
+Galamo: Galaxy Morphology Predictor
+===================================
+
+A package to predict the morphological type and subclass of galaxies from images.
+"""
+
+# Suppress TensorFlow warnings for a cleaner user experience.
+# This should be at the very top, before any tensorflow imports happen.
 import os
-import tensorflow as tf
-from .model import galaxy_morph, preprocess_image
-from .bpt import bpt  # BPT module
-from . import psr  # PSR enhancement module
-
-__version__ = "0.0.8"  # Updated version to reflect new module
-
-# Suppress TensorFlow warnings and logs
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+import tensorflow as tf
 tf.get_logger().setLevel('ERROR')
 
-# Model paths
-MODEL_PATH = os.path.join(os.path.dirname(__file__), "model.keras")
-MODEL_PATH2 = os.path.join(os.path.dirname(__file__), "model2.keras")
 
-# Load models
-if os.path.exists(MODEL_PATH) and os.path.exists(MODEL_PATH2):
-    model1 = tf.keras.models.load_model(MODEL_PATH)
-    model2 = tf.keras.models.load_model(MODEL_PATH2)
-else:
-    raise FileNotFoundError(f"One or more model files not found at {MODEL_PATH} or {MODEL_PATH2}")
+# --- Primary Imports ---
+# When this line is executed, it runs the model.py script, which automatically
+# handles the downloading, caching, and loading of the necessary models.
+from .model import galaxy_morph, preprocess_image
 
-# Expose key functions and modules
+# --- Package Metadata ---
+__version__ = "1.1.2"
+__author__ = "Jashanpreet Singh"
+__email__ = "astrodingra@gmail.com"
+
+
+# --- Public API ---
+# This list defines what a user gets when they import `from galamo import *`.
+# It's a good practice to explicitly define this to keep the package's
+# namespace clean.
 __all__ = [
     "galaxy_morph",
-    "preprocess_image",
-    "model1",
-    "model2",
     "bpt",
     "psr"
 ]
