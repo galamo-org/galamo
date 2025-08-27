@@ -35,8 +35,8 @@ Contact: astrodingra@gmail.com
 (maniscript under making)
 ## Supporting the Project
 
-![DAC](https://img.shields.io/badge/powered%20by-DAC-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)
-![Donate](https://img.shields.io/badge/Donate-to%20Galamo-brightgreen.svg)
+
+![Donate](https://img.shields.io/badge/Donate-to%20Galamo-brightgreen.svg) ---> contact@galamo.org
 
 Galamo needs support. Consider donating to support our mission!
 
