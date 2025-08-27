@@ -1,5 +1,3 @@
-# galamo/__init__.py
-
 """
 Galamo: Galaxy Morphology Predictor
 ===================================
@@ -28,8 +26,6 @@ __email__ = "astrodingra@gmail.com"
 
 # --- Public API ---
 # This list defines what a user gets when they import `from galamo import *`.
-# It's a good practice to explicitly define this to keep the package's
-# namespace clean.
 __all__ = [
     "galaxy_morph",
     "bpt",
