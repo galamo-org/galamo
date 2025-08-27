@@ -4,7 +4,6 @@
 ----
 [![Documentation](https://img.shields.io/badge/documentation-latest-green.svg)](https://galamo.readthedocs.io/en/latest/)
 [![PyPI version](https://img.shields.io/pypi/v/galamo.svg?color=800080)](https://pypi.org/project/galamo/)
-
 [![Downloads](https://pepy.tech/badge/galamo)](https://pepy.tech/project/galamo)
 [![GitHub stars](https://img.shields.io/github/stars/galamo-org/galamo?style=social)](https://github.com/galamo-org/galamo/stargazers)
 
