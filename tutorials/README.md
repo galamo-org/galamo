@@ -1,4 +1,3 @@
-`repository is under construction.`
 ## Tutorials
 
 Galamo offers a suite of well-documented tutorials and examples to guide users through its core functionalities in galaxy analysis. The tutorials are available through the [official documentation](https://www.galamo.org/learn.html) and GitHub repository, providing a hands-on, structured learning experience.
