@@ -15,6 +15,13 @@ Currently, Galamo supports three key modules:
 
 These modules are designed to support a wide range of research applications. For implementation details and example workflows, please refer to the tutorials and notebooks in the [GitHub tutorials section](https://www.galamo.org/learn.html).
 
+
+Note: galaxy_morph is a GPU-accelerated model trained on over 70,000 galaxies from the Galaxy Zoo project.
+
+We invite institutions, observatories, and astronomy enthusiasts with telescopes to contribute to this open-source effort by sharing their galaxy images, along with a few key parameters outlined. We will open the contribution portal soon.
+
+If your data is found to be valuable for training or validation, we will gratefully acknowledge your institution or team as a contributor to the galamo project. Your support can help push the boundaries of automated galaxy classification and empower the global astronomy community.
+
 ---
 
 
